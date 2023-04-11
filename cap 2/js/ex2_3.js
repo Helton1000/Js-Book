@@ -16,6 +16,11 @@ function mostrarPromo(){
 
     // Alterar 
     outCarro.innerHTML = "Promoção:" + car;
-    outEntrada.innerHTML = "Entrada R$:" + entrada;
+    outEntrada.innerHTML = "Entrada R$:" + entrada.toFixed(2);
     outParcelas.innerHTML = "+ 12x de R$:" + parcela.toFixed(2);
 }
+
+// Botão
+var btPromo = document.getElementById("btPromo");
+
+btPromo.addEventListener("click", mostrarPromo);
